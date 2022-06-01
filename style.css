@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+}
+
+.container{
+    padding: 0 15%;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    /* flex-wrap: wrap; */
+}
+
+.container .content .login-content .logo{
+    width: 200px;
+    margin-left: -20px;
+}
+
+.container .content .login-content h3{
+    text-transform: capitalize;
+    margin-top: -10px;
+    font-weight: 300;
+    font-size: 2.2rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.container .content .login-content p{
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: #606770;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.loginAcc{
+    display: flex;
+    gap: 10px;
+}
+
+.loginAcc .card{
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #dddfe2;
+    margin-top: 10px;
+    position: relative;
+}
+
+.loginAcc .close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    background-color: #606770;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account:hover .close{
+    transform: scale(1.3);
+    transition: .5s;
+    background-color: #fff;
+    color: #000;
+}
+
+.loginAcc .card .images{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.loginAcc .card .images img{
+    width: 100%;
+}
+
+.loginAcc .card .loginName{
+    padding: 10px 0;
+    text-transform: capitalize;
+    color: #606770;
+}
+
+.addAccount:hover{
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+.loginAcc .addAccount{
+    color: #1976f2;
+    position: relative;
+}
+
+.loginAcc .addAccount i{
+    font-size: 2.5rem;
+}
+
+.loginAcc .addAccount .loginName{
+    position: absolute;
+    color: #1976f2;
+    bottom: 5px;
+}
+
+/* login Form */
+.loginForm{
+    text-align: center;
+}
+
+.loginForm .card{
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loginForm .card ul{
+    list-style: none;
+}
+
+.loginForm .card ul li{
+    margin-bottom: 10px;
+}
+
+.loginForm .card ul input{
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #dddfe2;
+    color: #000;
+    outline: none;
+}
+
+.loginForm .card ul .signIn{
+    padding: 10px 20px;
+    width: 400px;
+    background-color: #1976f2;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.loginForm .card p a{
+    position: relative;
+    text-decoration: none;
+    color: #1976f2;
+    text-transform: capitalize;
+}
+
+hr{
+    width: 400px;
+    margin: 10px 0;
+    background-color: #606770;
+}
+
+.loginForm .card .signUp{
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #42b72a;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.loginForm p{
+    margin-top: 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: .9rem;
+}
+
+.loginForm strong{
+    text-transform: capitalize;
+}
+
+.footer{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    font-family: 'roboto', sans-serif;
+    font-size: .8rem;
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    background-color: #dddfe2;
+    width: 100%;
+    height: 1px;
+    top: 30%;
+    left: 0em;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 15px;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #606770;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    width: 1000px;
+    text-align: left;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #606770;
+}
